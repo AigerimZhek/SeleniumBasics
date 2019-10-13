@@ -29,7 +29,7 @@ public class HWTC3 extends CommonMethods{
 		
 		driver.findElement(By.cssSelector("input.hasDatepicker")).click();
 		
-		String expMonth = "August 2019";
+		String expMonth = "September 2019";
 		String val = driver.findElement(By.cssSelector("div.ui-datepicker-title")).getText();
 		System.out.println(val);
 		
@@ -48,7 +48,7 @@ public class HWTC3 extends CommonMethods{
 			}
 		}
 		
-		String expTxt = "08/10/2019";
+		String expTxt = "09/10/2019";
 		String txt = driver.findElement(By.cssSelector("input#datepicker")).getAttribute("value");
 		if(txt.equals(expTxt)) {
 			System.out.println("Date has been entered successfully");
